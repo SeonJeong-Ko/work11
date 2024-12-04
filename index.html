@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>work</title>
+  <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet">
+  <link rel="stylesheet" href="./item.css">
+  <script src="./item.js"></script>
+</head>
+<body>
+  <div id="main">
+    <div id="content">
+      <h2>TALK</h2>
+      <div class="caption">
+        <p>2024.06</p>
+        <p>Dimensions variable</p>
+      </div>
+
+      <!-- Gallery -->
+      <div class="gallery">
+        <button class="arrow left-arrow" onclick="changeSlide(-1)">&#9664;</button>
+        <div class="gallery-items">
+          <img src="./11.png" alt="work" class="responsive-media gallery-item" onclick="openInNewWindow(this.src)">
+          <div class="responsive-media gallery-item media-container">
+            <video src="./talk.mp4" autoplay muted loop onclick="openInNewWindow(this.src)"></video>
+            <p class="video-duration">00:43</p>
+          </div>
+        </div>
+        <button class="arrow right-arrow" onclick="changeSlide(1)">&#9654;</button>
+      </div>
+
+      <div class="note">
+        <p>함께 소통하고 나누는 것이 나를 살아있게 만든다.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
